@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+    <div class="logo">
+        Prep<span>Portal</span>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#home">Home</a>
+        <a href="#dsa">DSA</a>
+        <a href="#aptitude">Aptitude</a>
+        <a href="#interview">Interview</a>
+        <a href="#resume">Resume</a>
+        <a href="#companies">Companies</a>
+
+    </div>
+
+   <button class="login-btn" onclick="document.getElementById('loginModal').style.display='flex'">
+    Login
+</button>
+
+</nav>
+
+
+<section id="home" class="home">
+
+    <div class="hero-content">
+
+        <p class="tagline">
+            YOUR PLACEMENT JOURNEY STARTS HERE 🚀
+        </p>
+
+        <h1>
+            Prepare Smart.<br>
+            <span>Get Placed.</span>
+        </h1>
+
+        <p class="hero-text">
+            One platform to prepare for DSA, Aptitude,
+            Technical Interviews, Resume Building and
+            Company-specific placements.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="start-btn">
+                Start Preparing
+            </button>
+
+            <button class="explore-btn">
+                Explore Topics
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="categories">
+
+    <h2>Prepare For Your Placement</h2>
+
+    <p class="section-text">
+        Everything you need to crack your dream placement.
+    </p>
+
+    <div class="card-container">
+
+        <!-- DSA -->
+        <div class="card" id="dsa">
+
+            <div class="card-icon">💻</div>
+
+            <h3>DSA</h3>
+
+            <p>
+                Master Data Structures and Algorithms
+                with placement-focused questions.
+            </p>
+
+            <button>Start DSA →</button>
+
+        </div>
+
+
+        <!-- Aptitude -->
+        <div class="card" id="aptitude">
+
+            <div class="card-icon">🧠</div>
+
+            <h3>Aptitude</h3>
+
+            <p>
+                Practice Quantitative, Logical
+                and Verbal Ability.
+            </p>
+
+            <button>Practice →</button>
+
+        </div>
+
+
+        <!-- Interview -->
+        <div class="card" id="interview">
+
+            <div class="card-icon">🎤</div>
+
+            <h3>Interview</h3>
+
+            <p>
+                Prepare for HR and Technical
+                Interview questions.
+            </p>
+
+            <button>Prepare →</button>
+
+        </div>
+
+
+        <!-- Resume -->
+        <div class="card" id="resume">
+
+            <div class="card-icon">📄</div>
+
+            <h3>Resume Builder</h3>
+
+            <p>
+                Create a professional placement-ready
+                resume.
+            </p>
+
+            <button>Build Resume →</button>
+
+        </div>
+
+
+        <!-- Companies -->
+        <div class="card" id="companies">
+
+            <div class="card-icon">🏢</div>
+
+            <h3>Companies</h3>
+
+            <p>
+                Prepare according to different
+                company requirements.
+            </p>
+
+            <button>Explore →</button>
+
+        </div>
+
+
+        <!-- Progress -->
+        <div class="card">
+
+            <div class="card-icon">📊</div>
+
+            <h3>Progress Tracker</h3>
+
+            <p>
+                Track your preparation and
+                monitor your progress.
+            </p>
+
+            <button>View Progress →</button>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="resume-section" id="resume-builder">
+
+    <div class="resume-content">
+
+        <p class="tagline">
+            BUILD YOUR PROFESSIONAL RESUME
+        </p>
+
+        <h2>
+            Create a Resume That
+            <span>Gets Noticed.</span>
+        </h2>
+
+        <p class="resume-description">
+            Create a professional placement-ready resume
+            by adding your education, skills, projects,
+            certifications and achievements.
+        </p>
+
+        <div class="resume-features">
+
+            <div>✓ Professional Template</div>
+
+            <div>✓ Skills & Projects</div>
+
+            <div>✓ Certifications</div>
+
+            <div>✓ Live Preview</div>
+
+            <div>✓ Download PDF</div>
+
+        </div>
+
+        <button class="resume-btn">
+            Create My Resume →
+        </button>
+
+    </div>
+
+</section>
+<section class="resume-builder" id="resume-builder">
+
+    <div class="resume-builder-header">
+
+        <p class="tagline">RESUME BUILDER</p>
+
+        <h2>
+            Build Your <span>Resume</span>
+        </h2>
+
+        <p>
+            Enter your details and create a placement-ready resume.
+        </p>
+
+    </div>
+
+
+    <div class="resume-form">
+
+        <h3>Personal Information</h3>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+        >
+
+        <input
+            type="text"
+            id="email"
+            placeholder="Email Address"
+        >
+
+        <input
+            type="text"
+            id="phone"
+            placeholder="Phone Number"
+        >
+
+        <input
+            type="text"
+            id="github"
+            placeholder="GitHub / Portfolio Link"
+        >
+
+
+        <h3>Education</h3>
+
+        <input
+            type="text"
+            id="education"
+            placeholder="B.Tech in CSIT - College Name"
+        >
+
+
+        <h3>Skills</h3>
+
+        <input
+            type="text"
+            id="skills"
+            placeholder="C, C++, Java, HTML, CSS, JavaScript..."
+        >
+
+
+        <h3>Projects</h3>
+
+        <textarea
+            id="projects"
+            placeholder="Enter your projects..."
+        ></textarea>
+
+
+        <h3>Achievements & Certifications</h3>
+
+        <textarea
+            id="achievements"
+            placeholder="Enter achievements and certifications..."
+        ></textarea>
+
+
+        <button
+            class="generate-resume"
+            id="generateResume"
+        >
+            Generate Resume →
+        </button>
+
+    </div>
+
+</section>
+<section class="companies-section" id="companies">
+
+    <div class="companies-header">
+
+        <p class="tagline">
+            COMPANY-WISE PREPARATION
+        </p>
+
+        <h2>
+            Prepare For Your <span>Dream Company</span>
+        </h2>
+
+        <p>
+            Practice according to the hiring pattern
+            of top companies.
+        </p>
+
+    </div>
+
+
+    <div class="company-container">
+
+
+        <div class="company-card">
+
+            <h3>TCS</h3>
+
+            <p>
+                Aptitude • Coding • Interview
+            </p>
+
+            <button>
+                Prepare →
+            </button>
+
+        </div>
+
+
+        <div class="company-card">
+
+            <h3>Infosys</h3>
+
+            <p>
+                Aptitude • DSA • Technical
+            </p>
+
+            <button>
+                Prepare →
+            </button>
+
+        </div>
+
+
+        <div class="company-card">
+
+            <h3>Wipro</h3>
+
+            <p>
+                Coding • Aptitude • HR
+            </p>
+
+            <button>
+                Prepare →
+            </button>
+
+        </div>
+
+
+        <div class="company-card">
+
+            <h3>Accenture</h3>
+
+            <p>
+                Cognitive • Coding • Interview
+            </p>
+
+            <button>
+                Prepare →
+            </button>
+
+        </div>
+
+
+        <div class="company-card">
+
+            <h3>Amazon</h3>
+
+            <p>
+                DSA • Coding • Technical
+            </p>
+
+            <button>
+                Prepare →
+            </button>
+
+        </div>
+
+
+        <div class="company-card">
+
+            <h3>Microsoft</h3>
+
+            <p>
+                DSA • Problem Solving • Interview
+            </p>
+
+            <button>
+                Prepare →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="progress-section" id="progress">
+
+    <div class="progress-header">
+
+        <p class="tagline">
+            TRACK YOUR PREPARATION
+        </p>
+
+        <h2>
+            Your <span>Progress</span>
+        </h2>
+
+        <p>
+            Keep track of your placement preparation.
+        </p>
+
+    </div>
+
+
+    <div class="progress-container">
+
+
+        <!-- DSA -->
+
+        <div class="progress-card">
+
+            <div class="progress-title">
+
+                <h3>DSA</h3>
+
+              <span id="dsaPercent">0%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill dsa-progress" id="dsaProgress">
+</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Aptitude -->
+
+        <div class="progress-card">
+
+            <div class="progress-title">
+
+                <h3>Aptitude</h3>
+
+                <span>45%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill aptitude-progress">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Interview -->
+
+        <div class="progress-card">
+
+            <div class="progress-title">
+
+                <h3>Interview</h3>
+
+                <span>30%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill interview-progress">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Resume -->
+
+        <div class="progress-card">
+
+            <div class="progress-title">
+
+                <h3>Resume</h3>
+
+                <span>80%</span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill resume-progress">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="dsa-section" id="dsa-section">
+
+    <div class="dsa-header">
+
+        <p class="tagline">
+            MASTER DATA STRUCTURES & ALGORITHMS
+        </p>
+
+        <h2>
+            DSA <span>Preparation</span>
+        </h2>
+
+        <p>
+            Practice important topics asked in placement interviews.
+        </p>
+
+    </div>
+
+
+    <!-- FILTER BUTTONS -->
+
+    <div class="dsa-filters">
+
+        <button class="filter-btn active" data-level="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-level="easy">
+            Easy
+        </button>
+
+        <button class="filter-btn" data-level="medium">
+            Medium
+        </button>
+
+        <button class="filter-btn" data-level="hard">
+            Hard
+        </button>
+
+    </div>
+
+
+    <!-- DSA QUESTIONS -->
+
+    <div class="dsa-container">
+
+
+        <!-- Question 1 -->
+
+        <div class="question-card" data-level="easy">
+
+            <div class="question-top">
+
+                <span class="difficulty easy">
+                    Easy
+                </span>
+
+                <span>
+                    Arrays
+                </span>
+
+            </div>
+
+            <h3>
+                Find the largest element in an array
+            </h3>
+
+            <p>
+                Given an array, find the largest element.
+            </p>
+
+            <button class="solve-btn">
+                Solve Question →
+            </button>
+
+        </div>
+
+
+        <!-- Question 2 -->
+
+        <div class="question-card" data-level="easy">
+
+            <div class="question-top">
+
+                <span class="difficulty easy">
+                    Easy
+                </span>
+
+                <span>
+                    Strings
+                </span>
+
+            </div>
+
+            <h3>
+                Reverse a String
+            </h3>
+
+            <p>
+                Reverse the given string without using
+                built-in reverse functions.
+            </p>
+
+            <button class="solve-btn">
+                Solve Question →
+            </button>
+
+        </div>
+
+
+        <!-- Question 3 -->
+
+        <div class="question-card" data-level="medium">
+
+            <div class="question-top">
+
+                <span class="difficulty medium">
+                    Medium
+                </span>
+
+                <span>
+                    Linked List
+                </span>
+
+            </div>
+
+            <h3>
+                Reverse a Linked List
+            </h3>
+
+            <p>
+                Reverse a singly linked list iteratively.
+            </p>
+
+            <button class="solve-btn">
+                Solve Question →
+            </button>
+
+        </div>
+
+
+        <!-- Question 4 -->
+
+        <div class="question-card" data-level="medium">
+
+            <div class="question-top">
+
+                <span class="difficulty medium">
+                    Medium
+                </span>
+
+                <span>
+                    Stack
+                </span>
+
+            </div>
+
+            <h3>
+                Valid Parentheses
+            </h3>
+
+            <p>
+                Check whether the brackets in a string
+                are valid.
+            </p>
+
+            <button class="solve-btn">
+                Solve Question →
+            </button>
+
+        </div>
+
+
+        <!-- Question 5 -->
+
+        <div class="question-card" data-level="hard">
+
+            <div class="question-top">
+
+                <span class="difficulty hard">
+                    Hard
+                </span>
+
+                <span>
+                    Trees
+                </span>
+
+            </div>
+
+            <h3>
+                Binary Tree Maximum Path Sum
+            </h3>
+
+            <p>
+                Find the maximum path sum in a binary tree.
+            </p>
+
+            <button class="solve-btn">
+                Solve Question →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- QUESTION MODAL -->
+
+<div class="question-modal" id="questionModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal" id="closeModal">
+            ×
+        </button>
+
+        <span class="modal-difficulty" id="modalDifficulty">
+            Easy
+        </span>
+
+        <h2 id="modalTitle">
+            Question Title
+        </h2>
+
+        <p id="modalDescription">
+            Question description will appear here.
+        </p>
+
+        <textarea
+            id="answerBox"
+            placeholder="Write your solution or approach here..."
+        ></textarea>
+
+        <button class="submit-answer" id="submitAnswer">
+            Submit Answer
+        </button>
+        <button class="complete-btn" id="completeQuestion">
+    ✓ Mark as Completed
+</button>
+
+        <p id="answerMessage"></p>
+
+    </div>
+
+</div>
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            Prep<span>Portal</span>
+        </div>
+
+        <p>
+            Your journey from student to placed candidate.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#dsa-section">DSA</a>
+            <a href="#resume-builder">Resume</a>
+            <a href="#companies">Companies</a>
+            <a href="#progress">Progress</a>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 PrepPortal.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+    <!-- LOGIN MODAL -->
+
+<div class="login-modal" id="loginModal">
+
+    <div class="login-box">
+
+        <button class="close-login" id="closeLogin">
+            ×
+        </button>
+
+        <h2>Welcome to PrepPortal 👋</h2>
+
+        <p>Login to track your placement preparation.</p>
+
+        <input
+            type="text"
+            id="loginName"
+            placeholder="Enter your name"
+        >
+
+        <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter your email"
+        >
+
+        <button class="login-submit" id="loginSubmit">
+            Login
+        </button>
+
+        <p id="loginMessage"></p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
