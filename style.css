@@ -1,0 +1,1219 @@
+/* ===== BASE ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: white;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+p {
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: #111827;
+    border-bottom: 1px solid #1e293b;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.login-btn {
+    background: #38bdf8;
+    color: #0b1120;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 10px 22px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ===== HERO ===== */
+
+.home {
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 7%;
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.tagline {
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.hero-content h1 span {
+    color: #38bdf8;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: auto;
+
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.start-btn,
+.explore-btn {
+    padding: 14px 25px;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-btn {
+    background: #38bdf8;
+    color: #0b1120;
+    border: none;
+}
+
+.explore-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #334155;
+}
+
+.start-btn:hover {
+    transform: translateY(-3px);
+}
+
+.explore-btn:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+
+/* ===== CATEGORIES ===== */
+
+.categories {
+    width: 100%;
+    padding: 90px 7%;
+    text-align: center;
+    background: #0b1120;
+}
+
+.categories h2 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.section-text {
+    color: #94a3b8;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #111827;
+    border: 1px solid #1e293b;
+
+    padding: 30px 25px;
+    border-radius: 15px;
+
+    text-align: left;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #94a3b8;
+    line-height: 1.6;
+    min-height: 55px;
+}
+
+.card button {
+    margin-top: 20px;
+
+    background: transparent;
+    color: #38bdf8;
+    border: none;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card button:hover {
+    color: white;
+}
+
+
+/* ===== DSA ROADMAP ===== */
+
+.dsa-section {
+    width: 100%;
+    padding: 100px 7%;
+    background: #111827;
+    border-top: 1px solid #1e293b;
+    border-bottom: 1px solid #1e293b;
+}
+
+.dsa-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dsa-header h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.dsa-header h2 span {
+    color: #38bdf8;
+}
+
+.dsa-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    background: transparent;
+    color: #cbd5e1;
+
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #38bdf8;
+    color: #0b1120;
+    border-color: #38bdf8;
+}
+
+.dsa-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.topic-card {
+    background: #0b1120;
+
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+.topic-card.done {
+    border-color: #22c55e;
+}
+
+.topic-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.topic-step {
+    color: #64748b;
+    font-weight: bold;
+}
+
+.level-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.level-badge.easy {
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.12);
+}
+
+.level-badge.medium {
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.12);
+}
+
+.level-badge.hard {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.12);
+}
+
+.topic-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.topic-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.platform-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.plat-btn {
+    display: block;
+
+    padding: 10px 14px;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.plat-btn:hover {
+    color: #0b1120;
+}
+
+.plat-btn.lc:hover {
+    background: #f59e0b;
+    border-color: #f59e0b;
+}
+
+.plat-btn.gfg:hover {
+    background: #22c55e;
+    border-color: #22c55e;
+}
+
+.plat-btn.hr:hover {
+    background: #38bdf8;
+    border-color: #38bdf8;
+}
+
+.done-btn {
+    margin-top: 14px;
+    padding: 10px;
+
+    background: transparent;
+    color: #94a3b8;
+
+    border: 1px dashed #334155;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.done-btn:hover {
+    color: #22c55e;
+    border-color: #22c55e;
+}
+
+.topic-card.done .done-btn {
+    background: #22c55e;
+    color: #0b1120;
+    border: 1px solid #22c55e;
+}
+
+
+/* ===== RESUME BUILDER ===== */
+
+.resume-builder {
+    width: 100%;
+    padding: 80px 7%;
+    background: #0b1120;
+}
+
+.resume-builder-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resume-builder-header h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.resume-builder-header h2 span {
+    color: #38bdf8;
+}
+
+.resume-form {
+    max-width: 750px;
+    margin: auto;
+
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+
+    padding: 35px;
+}
+
+.resume-form h3 {
+    margin: 25px 0 15px;
+}
+
+.resume-form h3:first-child {
+    margin-top: 0;
+}
+
+.resume-form input,
+.resume-form textarea {
+    width: 100%;
+
+    padding: 14px;
+    margin-bottom: 12px;
+
+    background: #0b1120;
+    color: white;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    outline: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.resume-form input:focus,
+.resume-form textarea:focus {
+    border-color: #38bdf8;
+}
+
+.resume-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.generate-resume {
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 14px;
+
+    background: #38bdf8;
+    color: #0b1120;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ===== COMPANIES ===== */
+
+.companies-section {
+    width: 100%;
+    padding: 100px 7%;
+    background: #111827;
+    border-top: 1px solid #1e293b;
+}
+
+.companies-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.companies-header h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.companies-header h2 span {
+    color: #38bdf8;
+}
+
+.company-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.company-card {
+    background: #0b1120;
+
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.company-card:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+.company-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.company-card p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.company-card button {
+    background: transparent;
+    border: none;
+
+    color: #38bdf8;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.company-card button:hover {
+    color: white;
+}
+
+
+/* ===== PROGRESS ===== */
+
+.progress-section {
+    width: 100%;
+    padding: 100px 7%;
+    background: #0b1120;
+    border-top: 1px solid #1e293b;
+}
+
+.progress-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.progress-header h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.progress-header h2 span {
+    color: #38bdf8;
+}
+
+.progress-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.progress-card {
+    background: #111827;
+
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+
+    padding: 25px;
+}
+
+.progress-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.progress-title h3 {
+    font-size: 18px;
+}
+
+.progress-title span {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+
+    background: #1e293b;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+
+    background: #38bdf8;
+    border-radius: 10px;
+
+    transition: width 0.4s;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    width: 100%;
+
+    padding: 60px 7% 25px;
+
+    background: #070b14;
+    border-top: 1px solid #1e293b;
+
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-logo span {
+    color: #38bdf8;
+}
+
+.footer-content > p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
+}
+
+.copyright {
+    margin-top: 35px;
+    padding-top: 20px;
+
+    border-top: 1px solid #1e293b;
+
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* ===== LOGIN MODAL ===== */
+
+.login-modal {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 3000;
+}
+
+.login-box {
+    width: 90%;
+    max-width: 420px;
+
+    background: #111827;
+
+    border: 1px solid #334155;
+    border-radius: 15px;
+
+    padding: 35px;
+
+    position: relative;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+}
+
+.login-box > p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.login-box input {
+    width: 100%;
+
+    padding: 13px;
+    margin-bottom: 12px;
+
+    background: #0b1120;
+    color: white;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #38bdf8;
+}
+
+.login-submit {
+    width: 100%;
+
+    padding: 13px;
+    margin-top: 10px;
+
+    background: #38bdf8;
+    color: #0b1120;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-login {
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    background: transparent;
+    border: none;
+
+    color: #94a3b8;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#loginMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .card-container,
+    .company-container,
+    .dsa-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .login-btn {
+        padding: 8px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .card-container,
+    .company-container,
+    .dsa-container,
+    .progress-container {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-builder-header h2,
+    .companies-header h2,
+    .progress-header h2,
+    .dsa-header h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* ===== APTITUDE ===== */
+
+.apt-section {
+    width: 100%;
+    padding: 100px 7%;
+    background: #0b1120;
+    border-bottom: 1px solid #1e293b;
+}
+
+.apt-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.apt-header h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.apt-header h2 span {
+    color: #38bdf8;
+}
+
+.apt-stats {
+    max-width: 700px;
+    margin: 0 auto 35px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.apt-stat {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+
+    padding: 18px;
+    text-align: center;
+}
+
+.apt-stat strong {
+    display: block;
+    font-size: 26px;
+    color: #38bdf8;
+    margin-bottom: 4px;
+}
+
+.apt-stat span {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.apt-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.apt-filter-btn {
+    padding: 9px 18px;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    background: transparent;
+    color: #cbd5e1;
+
+    cursor: pointer;
+}
+
+.apt-filter-btn:hover,
+.apt-filter-btn.active {
+    background: #38bdf8;
+    color: #0b1120;
+    border-color: #38bdf8;
+}
+
+.apt-reset-wrap {
+    text-align: center;
+    margin: 20px 0 35px;
+}
+
+.apt-reset {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.apt-reset:hover {
+    color: #ef4444;
+}
+
+.apt-list {
+    max-width: 850px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apt-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+
+    padding: 25px;
+}
+
+.apt-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.apt-num {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.apt-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.apt-tag {
+    font-size: 12px;
+    color: #94a3b8;
+
+    border: 1px solid #334155;
+    border-radius: 20px;
+
+    padding: 4px 12px;
+}
+
+.apt-question {
+    font-size: 17px;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    white-space: pre-line;
+}
+
+.apt-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.opt-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-align: left;
+
+    padding: 12px 14px;
+
+    background: #0b1120;
+    color: #cbd5e1;
+
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.opt-btn:hover:not(:disabled) {
+    border-color: #38bdf8;
+}
+
+.opt-btn:disabled {
+    cursor: default;
+}
+
+.opt-letter {
+    flex-shrink: 0;
+
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #1e293b;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.opt-btn.correct {
+    border-color: #22c55e;
+    background: rgba(34, 197, 94, 0.12);
+    color: white;
+}
+
+.opt-btn.wrong {
+    border-color: #ef4444;
+    background: rgba(239, 68, 68, 0.12);
+    color: white;
+}
+
+.apt-explain {
+    margin-top: 16px;
+    padding: 14px 16px;
+
+    border-radius: 10px;
+    border-left: 4px solid;
+}
+
+.apt-explain.right {
+    border-color: #22c55e;
+    background: rgba(34, 197, 94, 0.08);
+}
+
+.apt-explain.bad {
+    border-color: #ef4444;
+    background: rgba(239, 68, 68, 0.08);
+}
+
+.apt-explain p {
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.apt-more-wrap {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.apt-more {
+    display: none;
+
+    padding: 13px 28px;
+
+    background: #38bdf8;
+    color: #0b1120;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.apt-empty {
+    display: none;
+    text-align: center;
+    color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+
+    .apt-options {
+        grid-template-columns: 1fr;
+    }
+
+    .apt-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .apt-header h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* ===== LOGIN: SWITCH LINK ===== */
+.login-switch {
+    width: 100%;
+    margin-top: 12px;
+    background: none;
+    border: none;
+    color: #38bdf8;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login-switch:hover {
+    text-decoration: underline;
+}
+
+#loginMessage {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+#loginForgot {
+    margin-top: 8px;
+    color: #94a3b8;
+}
